@@ -7,13 +7,14 @@ public class Product {
 	private int quantity;
 	private double price;
 
+
 	public Product(int id, int quantity, double price, String name, String description) {
 		setId(id);
 		setQuantity(quantity);
 		setPrice(price);
 		setName(name);
-		setDescription(description);
 	}
+
 
 	public Integer getId() {
 		return id;
@@ -65,6 +66,8 @@ public class Product {
 
 	public double getInventoryPrice() {
 		// TODO Auto-generated method stub
-		return 0.0;
+		return (quantity * price);
 	}
+
+
 }

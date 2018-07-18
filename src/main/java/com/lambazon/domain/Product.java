@@ -17,7 +17,12 @@ if (quantity < 0 );{
 	this.quantity = 0;}
 	 
 		setPrice(price);
-		
+		//if the price is negative, price = 0
+		if (price < 0);{
+			this.price = 0.0;}
+//if the price is bigger than 1000, price = 1000
+			if (price > 1000);{
+			this.price = 1000;}
 		setName(name);
 	
 	}

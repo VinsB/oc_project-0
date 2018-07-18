@@ -12,20 +12,14 @@ public class Product {
 		setId(id);
 		
 	 setQuantity(quantity);
-	 //if the quantity is negative, quantity = 0
-if (quantity < 0 );{
-	this.quantity = 0;}
-	 
-		setPrice(price);
-		//if the price is negative, price = 0
-		if (price < 0);{
-			this.price = 0.0;}
-//if the price is bigger than 1000, price = 1000
-			if (price > 1000);{
-			this.price = 1000;}
-		setName(name);
 	
-	}
+			
+		
+		setPrice(price);
+		
+			setName(name);}
+	
+	
 
 	public Integer getId() {
 		return id;
@@ -65,20 +59,28 @@ if (quantity < 0 );{
 	}
 
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
 		
 		
+		//if the quantity is negative, quantity = 0
+		if (quantity < 0){
+		this.quantity = 0;} 
+		else { this.quantity = quantity;}
 			
 	}
 
 	public double getPrice() {
 		return price;
+		
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
 		
-		}
+		//if the price is bigger than 1000 or equal, price = 1000
+		if (price > 1000.0) {this.price = 1000.0;}
+		//if the price is negative, price = 0 
+		else if (price < 0){this.price = 0.0;}
+		else {this.price = price;}
+	}
 	
 
 	public double getInventoryPrice() {

@@ -10,11 +10,17 @@ public class Product {
 
 	public Product(int id, int quantity, double price, String name, String description) {
 		setId(id);
-		setQuantity(quantity);
+		
+	 setQuantity(quantity);
+	 //if the quantity is negative, quantity = 0
+if (quantity < 0 );{
+	this.quantity = 0;}
+	 
 		setPrice(price);
+		
 		setName(name);
+	
 	}
-
 
 	public Integer getId() {
 		return id;
@@ -50,10 +56,14 @@ public class Product {
 
 	public int getQuantity() {
 		return quantity;
+	
 	}
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+		
+		
+			
 	}
 
 	public double getPrice() {
@@ -62,12 +72,19 @@ public class Product {
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
+		
+		}
+	
 
 	public double getInventoryPrice() {
 		// TODO Auto-generated method stub
+		//add multiplication for fix the bug return 0.0 
 		return (quantity * price);
 	}
-
-
+	
+	
 }
+
+	
+	
+

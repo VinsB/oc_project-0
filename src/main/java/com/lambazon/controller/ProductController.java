@@ -31,7 +31,7 @@ public class ProductController {
 	}
 	
 	private double calculateTotalInventoryAmount() {
-		// TODO Auto-generated method stub
+		//this method calculate the total quantity of the stock 
 				
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {

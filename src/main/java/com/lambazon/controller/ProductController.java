@@ -31,7 +31,7 @@ public class ProductController {
 	}
 	
 	private double calculateTotalInventoryAmount() {
-		//this method calculate the total quantity of the stock 
+		//this method calculate the total quantity of the stock in real time
 				
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {

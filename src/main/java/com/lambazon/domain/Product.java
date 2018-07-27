@@ -13,6 +13,7 @@ public class Product {
 		setQuantity(quantity);
 		setPrice(price);
 		setName(name);
+		setDescription(description);
 		}
 	
 	

@@ -14,6 +14,7 @@ public class Product {
 		setPrice(price);
 		setName(name);
 		setDescription(description);
+	
 		}
 	
 	
